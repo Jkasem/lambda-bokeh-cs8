@@ -9,15 +9,14 @@ from graph import *
 
 graph_data = Graph()
 graph_data.randomize(500, 500, 20, 0.1)
+graph_data.connect_components(graph_data)
 
 N = len(graph_data.vertexes)
-print(N)
 node_indices = list(range(N))
 
 color_list = []
 for vertex in graph_data.vertexes:
   color_list.append(vertex.color)
-
 
 plot = figure(title='Graph Layout Demonstration', x_range=(0, 500), y_range=(0, 500),
               tools='', toolbar_location=None)

@@ -56,7 +56,7 @@ class Graph:
       v1.edges.append(Edge(v0))
 
     count = 0
-    buffer_size = 10
+    buffer_size = 30
 
     for y in range(buffer_size, height - buffer_size, size):
       for x in range(buffer_size, width - buffer_size, size):
@@ -77,3 +77,12 @@ class Graph:
           nums = list(range(0,index - 1)) + list(range(index + 1, len(self.vertexes)))
           random_destination = random.choice(nums)
           connectVerts(v, self.vertexes[random_destination])
+
+  def connect_components(self, graph):
+    searched = []
+
+    for v in graph.vertexes:
+      if v not in searched:
+        subgraph = self.bfs(v)
+        for ver in subgraph:
+          searched.append(ver)
