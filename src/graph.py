@@ -25,3 +25,9 @@ class Graph:
     debug_vertex_2.edges.append(debug_edge_2)
 
     self.vertexes.extend([debug_vertex_1, debug_vertex_2, debug_vertex_3])
+
+  def debug_bfs(self):
+    pass
+
+  def debug_randomize(self):
+    pass
