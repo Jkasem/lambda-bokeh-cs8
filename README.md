@@ -4,5 +4,11 @@ Lambda School Bokeh Sprint
 - [x] Lecture code
 - [x] Completed edges and labels
 - [x] BFS()
-- [ ] Connected Components
-- [ ] Randomize()
+- [x] Connected Components
+- [x] Randomize()
+
+Stretch:
+- [ ] No overlapping edges
+- [ ] No dark colors
+- [x] Remove grid lines
+- [ ] Stylish
