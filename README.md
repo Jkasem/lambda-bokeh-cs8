@@ -3,6 +3,6 @@ Lambda School Bokeh Sprint
 
 - [x] Lecture code
 - [x] Completed edges and labels
-- [ ] BFS()
+- [x] BFS()
 - [ ] Connected Components
 - [ ] Randomize()

@@ -8,10 +8,10 @@ from bokeh.palettes import Spectral8
 from graph import *
 
 graph_data = Graph()
-graph_data.debug_create_test_data()
-print(graph_data.bfs(graph_data.vertexes[0]))
+graph_data.randomize(500, 500, 20, 0.1)
 
 N = len(graph_data.vertexes)
+print(N)
 node_indices = list(range(N))
 
 color_list = []
